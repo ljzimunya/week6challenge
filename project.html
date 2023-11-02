@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>She Codes</title>
+    <style>
+      body {
+        background-color: rgb(254, 255, 240);
+      }
+      h1 {
+        text-align: center;
+        color: grey;
+        font-style: oblique;
+      }
+      h2 {
+        text-align: center;
+        color: gray;
+        font-size: 2em;
+        font-weight: none;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        image-rendering: crisp-edges;
+        border: 5px solid gray;
+        box-shadow: none;
+      }
+      p {
+        display: block;
+        text-align: justify;
+        line-height: 0.5cm;
+        font-size: 20px;
+        margin-inline-start: 500px;
+        margin-inline-end: 500px;
+        color: darkslategray;
+      }
+      a {
+        display: block;
+        color: burlywood;
+        text-align: center;
+        margin: 20px;
+      }
+      a:hover {
+        color: gray;
+        background-color: burlywood;
+      }
+      button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        font-size: 20px;
+        color: burlywood;
+        border: 5px solid gray;
+        border-radius: 100px 100px 100px 100px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: burlywood;
+        color: gray;
+        transition: all 100ms linear;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><strong> H & H Cake Essentials</strong></h1>
+    <br />
+    <hr />
+    <br />
+    <h2><em>Cakes For All Occassions</em></h2>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgzASuEeHpAPMT7bxQde8J2B5ERjQh64zBQ&usqp=CAU"
+    />
+    <p>
+      Make your special occasion truly memorable! We have an amazing selection
+      of impressive and delicious cakes for every occasion. there is a wide
+      variety flavours, that will melt in your, from which you can choose from!
+    </p>
+    <a href="https://www.facebook.com/100076271586561/">
+      Visit us on our facebook page.
+    </a>
+    <br />
+    <br />
+    <button>Order Now</button>
+    <script>
+      function orderNow() {
+        let name = prompt("What is your name?");
+        let cake = prompt("Would you like to order a cake?");
+        if (cake === "yes") {
+          alert("Hello " + name + " Thank you for your order!");
+        } else {
+          alert("Goodbye! " + name);
+        }
+      }
+      let orderButton = document.querySelector("button");
+      orderButton.addEventListener("click", orderNow);
+    </script>
+  </body>
+</html>
